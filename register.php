@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="ru">
 <head>
@@ -22,6 +26,10 @@
         <input type="password" name="password_confirm" placeholder="Введите пароль еще раз">
         <button>Войти</button>
         <p>У вас уже есть аккаунт - <a href="index.php">авторезируйтесь</a></p>
+
+        <p class="msg">
+            <?= $_SESSION['massage'] ?>
+        </p>
     </form>
 
 </body>
