@@ -16,6 +16,7 @@ if ($password === $password_confirm) {
         $_SESSION['message'] = 'Ошибка при загрузке сообщения';
         header('Location: ../register.php');
     }
+    $password = md5($password); //md5 делает строку нечитаемой. в этом случае пароль. при сохрании в БД. Ввели 12345 а бд сохранила 827ccb0eea8a706c4c34a16891f84e7b
 
     $connect = mysqli_connect('localhost', 'root', 'root', 'test');
     mysqli_query($connect, "INSERT INTO `test` (`id`, `full_name`, `login`, `email`, `password`, `avatar`) VALUES (NULL, '$full_name', '$login', '$email', '$password', '$path')");
