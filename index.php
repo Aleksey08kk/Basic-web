@@ -16,19 +16,22 @@ if ($_SESSION['user']) {
 
     <form action="vendor/signin.php" method="post">
         <label>Логин</label>
-        <input type="text" name="login" placeholder="Введите логин">
+        <input type="email" name="email" placeholder="Введите свою почту">
         <label>Пароль</label>
-        <input type="text" name="password" placeholder="Введите пароль">
+        <input type="password" name="password" placeholder="Введите пароль">
         <button type="submit">Войти</button>
         <p>Нет аккаунта? - <a href="register.php">зарегистрируйтесь</a></p>
+
+        <?php
+        if ($_SESSION['message']) {
+            echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
+        }
+        unset($_SESSION['message']);
+        ?>
+
     </form>
 
-    <?php
-    if ($_SESSION['message']) {
-        echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
-    }
-    unset($_SESSION['message']);
-    ?>
+
 
 </body>
 </html>
