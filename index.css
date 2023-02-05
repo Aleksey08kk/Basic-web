@@ -9,98 +9,80 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Montserrat, sans-serif;
-    background-color: darkgray;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://static.wixstatic.com/media/6adf48_6bc4b13da726408d9996312718cd1688~mv2.gif');
+    background-size: 100% auto;
 }
-.infoProfile{
-    margin: 10px 0 0 100px;
+.labelСosmonaft{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: indigo;
+    margin: -50px auto 30px auto;
 }
-a {
-    color: #7c9ab7;
-    font-weight: bold;
+.labelAuthorization{
+    color: #7f05d9;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.buttonAuthorization {
     text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+    width: 300px;
+    margin: 30px auto;
+    background-color: rgba(75, 0, 130, 0.7);
+}
+.buttonAuthorization:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: white;
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.buttonAuthorization:hover {
+    background: rgba(255, 255, 255, 0);
+}
+.buttonAuthorization:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
 }
 
-p {
-    margin: 10px 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-}
-
-input {
-    margin: 10px 0;
+.input {
+    margin: 10px auto;
     padding: 10px;
     border: unset;
     border-bottom: 2px solid #e3e3e3;
     outline: none;
+    opacity: 0.5;
+    background-color: indigo;
+    width: 300px;
+}
+.input:hover{
+    opacity: 1.0;
 }
 
-button {
-    padding: 10px;
-    background: #e3e3e3;
-    border: unset;
-    cursor: pointer;
-}
-
-.msg {
-    border: 2px solid #ffa908;
-    border-radius: 3px;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.logout {
-    color: #b7625c;
-    padding: 10px 0;
-}
-
-/*--------------------------------------Форма обратной связи-------------------------------------*/
-
-.feedbackForm{
-    max-width: 400px;
-    color: rgb(253, 253, 253);
-    font-size: 30px;
-    margin: 0 auto;
-    padding: 10px 10px;
-    border-radius: 37px;
-    background: rgb(68, 68, 68);
-    -webkit-box-shadow: 1px 5px 37px 2px rgba(34, 60, 80, 0.56);
-    -moz-box-shadow: 1px 5px 37px 2px rgba(34, 60, 80, 0.56);
-    box-shadow: 1px 5px 37px 2px rgba(34, 60, 80, 0.56);
-}
-.label{
-    text-align: center;
-}
-.labelRadio{
-    text-align: center;
-    font-size: 20px;
-}
-.input{
-    width: 370px;
-    height: 40px;
-    margin: 10px auto;
-}
-.inputMultiline{
-    width: 370px;
-    height: 100px;
-    margin: 15px auto;
-}
-.wrapRadioAndText{
+.form {
     display: flex;
-    font-size: 15px;
-}
-.radioText{
-    margin: 0 20px;
-}
-
-.button{
-    width: 370px;
-    height: 40px;
-    margin: 25px auto;
-    background-color: #38a3fd;
+    flex-direction: column;
+    width: 400px;
+    height: 470px;
+    background-color: rgba(240, 248, 255, 0.13);
+    border-radius: 30px;
 }
