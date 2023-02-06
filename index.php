@@ -16,11 +16,9 @@ if ($_SESSION['user']) {
 </head>
 <body>
 
-    <form class="form" action="vendor/signin.php" method="post">
-        <img class="labelСosmonaft" src="https://i.gifer.com/BVLZ.gif" alt="CosmonaftGIF">
-        <label class="labelAuthorization">Логин</label>
+    <form class="form" action="backEndPhp/signin.php" method="post">
+        <img class="labelСosmonaft" src="https://i.gifer.com/WME4.gif" alt="CosmonaftGIF">
         <input class="input" type="email" name="email" placeholder="Введите свою почту">
-        <label class="labelAuthorization">Пароль</label>
         <input class="input" type="password" name="password" placeholder="Введите пароль">
         <button class="buttonAuthorization" type="submit">Войти</button>
         <a class="labelAuthorization" href="register.php">Регистрация</a>

@@ -5,27 +5,49 @@
 }
 
 body {
-    height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('https://static.wixstatic.com/media/6adf48_6bc4b13da726408d9996312718cd1688~mv2.gif');
+    background-image: url('https://cutewallpaper.org/21/space-gif-wallpaper/Stars-Gif-1920x1080-Ryanmartinproductions.com.gif');
     background-size: 100% auto;
 }
-.labelСosmonaft{
+
+.infoProfile{
+margin: 20px 0 0 20px;
+}
+.imgAvatar{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.infoUnderAvatar{
+    color: indigo;
+}
+
+.labelPlaneta{
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: indigo;
-    margin: -50px auto 30px auto;
+    margin: -50px auto 10px auto;
 }
-.labelAuthorization{
+.labelBackCall{
     color: #7f05d9;
-    margin: 10px auto;
+    margin: 0 auto;
     font-size: 20px;
+    letter-spacing: 5px;
 }
-.buttonAuthorization {
+.label{
+    color: #7f05d9;
+    margin: 0 auto;
+    font-size: 15px;
+}
+.wrapRadioAndText{
+    margin: 4px 0 4px 50px;
+    text-align: left;
+}
+
+.button {
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -40,10 +62,10 @@ body {
     letter-spacing: 2px;
     transition: .8s cubic-bezier(.165, .84, .44, 1);
     width: 300px;
-    margin: 30px auto;
+    margin: 20px auto;
     background-color: rgba(75, 0, 130, 0.7);
 }
-.buttonAuthorization:before {
+.button:before {
     content: "";
     position: absolute;
     left: 0;
@@ -55,10 +77,47 @@ body {
     background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
     transition: .8s cubic-bezier(.165, .84, .44, 1);
 }
-.buttonAuthorization:hover {
+.button:hover {
     background: rgba(255, 255, 255, 0);
 }
-.buttonAuthorization:hover:before {
+.button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+
+.buttonCleanInputs{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 5px 0;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+    width: 200px;
+    margin: 5px auto;
+    background-color: rgba(75, 0, 130, 0.7);
+}
+.buttonCleanInputs:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    color: white;
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.buttonCleanInputs:hover {
+    background: rgba(255, 255, 255, 0);
+}
+.buttonCleanInputs:hover:before {
     bottom: 0%;
     top: auto;
     height: 100%;
@@ -82,11 +141,16 @@ body {
 .input:focus{
     color: white;
 }
+
 .form {
+    margin: -240px auto 0 auto;
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 380px;
+    height: 100%;
     background-color: rgba(240, 248, 255, 0.13);
     border-radius: 30px;
+}
+.list{
+    background-color: indigo;
 }

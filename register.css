@@ -18,7 +18,7 @@ body {
     width: 100px;
     height: 100px;
     background-color: indigo;
-    margin: -50px auto 30px auto;
+    margin: -50px auto 10px auto;
 }
 .labelAuthorization{
     color: #7f05d9;
@@ -86,7 +86,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 380px;
+    height: 80%;
     background-color: rgba(240, 248, 255, 0.13);
     border-radius: 30px;
 }
