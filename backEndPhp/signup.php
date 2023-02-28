@@ -14,7 +14,7 @@ $password_confirm = $_POST['password_confirm'];
 if ($password === $password_confirm) {
     $path = 'uploads/' . time() . $_FILES['avatar']['name']; //записали путь сохранения аватарки
 
-    if (!move_uploaded_file($_FILES['avatar']['tmp_name'], '../' . $path)){ //если не загружается то сообщение об ошибке
+    if (!move_uploaded_file($_FILES['avatar']['tmp_name'], '../' . $path)) { //если не загружается то сообщение об ошибке
         $_SESSION['message'] = 'Ошибка при загрузке сообщения';
         header('Location: ../register.php');
     }

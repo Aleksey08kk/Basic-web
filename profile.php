@@ -27,17 +27,21 @@ if (!$_SESSION['user']) {
 <form class="form" action="backEndPhp/feedback.php" method="post">
     <img class="labelPlaneta" src="https://i.gifer.com/gzZ.gif" alt="CosmonaftGIF">
     <label class="labelBackCall">Заявка на обратный звонок</label>
-    <input class="input" type="text" name="name" placeholder="Текстовое поле" required />
+    <input class="input" type="text" name="name" placeholder="Текстовое поле" required/>
     <textarea class="input" type="text" name="multiline" placeholder="Многострочное текстовое поле"></textarea>
 
     <label class="label">Радио кнопки:</label>
-    <div class="wrapRadioAndText"><input class="radioText" type="radio" name="radio" value="1" checked /> Первая кнопка</div>
-    <div class="wrapRadioAndText"><input class="radioText" type="radio" name="radio" value="2" /> Вторая кнопка</div>
+    <div class="wrapRadioAndText"><input class="radioText" type="radio" name="radio" value="1" checked/> Первая кнопка
+    </div>
+    <div class="wrapRadioAndText"><input class="radioText" type="radio" name="radio" value="2"/> Вторая кнопка</div>
 
     <label class="label">Флажки:</label>
-    <span class="wrapRadioAndText"><input class="radioText" type="checkbox" name="flag[]" value="1" /> Первый флажок</span>
-    <span class="wrapRadioAndText"><input class="radioText" type="checkbox" name="flag[]" value="2" /> Второй флажок</span>
-    <span class="wrapRadioAndText"><input class="radioText" type="checkbox" name="flag[]" value="3" /> Третий флажок</span>
+    <span class="wrapRadioAndText"><input class="radioText" type="checkbox" name="flag[]"
+                                          value="1"/> Первый флажок</span>
+    <span class="wrapRadioAndText"><input class="radioText" type="checkbox" name="flag[]"
+                                          value="2"/> Второй флажок</span>
+    <span class="wrapRadioAndText"><input class="radioText" type="checkbox" name="flag[]"
+                                          value="3"/> Третий флажок</span>
 
     <label class="label">Выпадающий список:</label>
     <select class="input" name="country">
