@@ -37,11 +37,11 @@ if (!$_SESSION['user']) {
 
     <label class="label">Флажки:</label>
     <span class="wrapRadioAndText"><input class="radioText" type="checkbox" name="flag[]"
-                                          value="1"/> Первый флажок</span>
+                                          value="Первый"/> Первый флажок</span>
     <span class="wrapRadioAndText"><input class="radioText" type="checkbox" name="flag[]"
-                                          value="2"/> Второй флажок</span>
+                                          value="Второй"/> Второй флажок</span>
     <span class="wrapRadioAndText"><input class="radioText" type="checkbox" name="flag[]"
-                                          value="3"/> Третий флажок</span>
+                                          value="Третий"/> Третий флажок</span>
 
     <label class="label">Выпадающий список:</label>
     <select class="input" name="country">

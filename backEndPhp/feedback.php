@@ -12,18 +12,16 @@ $multiline = htmlspecialchars($multiline);
 $radio = $_POST['radio']; //Результат радиокнопки. Сюда запишется результат выбора.
 
 /*----------------------------------------Обработка флажков-----------------------------------------------------------*/
-
 $flags = $_POST['flag'];
+$select = 0;
 if (empty($flags)) {
     echo("Вы ничего не выбрали.");
 } else {
-    $N = count($flags);
-    echo("Выбрано заданий: $N. ");
-    for ($i = 0; $i < $N; $i++) {
-        echo($flags[$i] . ", ");
+    foreach($flags as $selectedFlags){
+    $select = $selectedFlags . ', ';
+ //       echo ($select);
     }
 }
-$flags = isset($_POST['flag']) ? 1 : 0;
 /*----------------------------------------Обработка выпадающего списка------------------------------------------------*/
 
 $country = $_POST['country'];
@@ -31,7 +29,7 @@ $country = $_POST['country'];
 /*----------------------------------------Отправляем письмо на почту--------------------------------------------------*/
 
 if (mail("lialinaleksey08kk@yandex.ru", "Письмо с формы",
-    "$name, $multiline, $radio, $flags,$country",
+    "$name, $multiline, $radio, $select,$country",
     "Form: no-reply@mydomain.ru \r\n")) {
     echo('Данные успешно отправлены!');
 } else {
